@@ -1,0 +1,21 @@
+{
+    "name": "besimple/memcached",
+    "type": "library",
+    "description": "Library for memcached",
+    "keywords": ["memcached", "cache"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Francis Besset",
+            "email": "francis.besset@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.2"
+    },
+    "autoload": {
+        "psr-0": {
+            "BeSimple_Memcached_": "lib/"
+        }
+    }
+}
