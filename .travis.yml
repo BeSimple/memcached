@@ -6,5 +6,7 @@ php:
   - 5.4
 
 before_script:
-  - pecl install memcached
+  - wget http://pecl.php.net/get/memcached-2.1.0.tgz
+  - tar -xzf memcached-2.1.0.tgz
+  - cd memcached-2.1.0 && phpize && ./configure && make && sudo make install
   - echo "extension=memcached.so" >> `php --ini | grep "Loaded Configuration" | sed -e "s|.*:\s*||"`
