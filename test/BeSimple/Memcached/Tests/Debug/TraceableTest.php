@@ -17,7 +17,7 @@ class BeSimple_Memcached_Tests_Debug_TraceableTest extends PHPUnit_Framework_Tes
     }
 
     /**
-     * @expectedException \InvalidArgumentException
+     * @expectedException InvalidArgumentException
      */
     public function testConstructWithInvalidMemcachedInstance()
     {

@@ -9,7 +9,7 @@ class BeSimple_Memcached_Debug_Traceable implements BeSimple_Memcached_Traceable
     public function __construct($memcached)
     {
         if (!$memcached instanceof Memcached && !$memcached instanceof BeSimple_Memcached_MemcachedInterface) {
-            throw new \InvalidArgumentException('The memcached must be an instance of Memcached or BeSimple_Memcached_MemcachedInterface');
+            throw new InvalidArgumentException('The memcached must be an instance of Memcached or BeSimple_Memcached_MemcachedInterface');
         }
 
         $this->memcached = $memcached;
