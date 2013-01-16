@@ -1,0 +1,10 @@
+language: php
+
+php:
+  - 5.2
+  - 5.3
+  - 5.4
+
+before_script:
+  - pecl install memcache
+  - echo "extension=memcache.so" >> `php --ini | grep "Loaded Configuration" | sed -e "s|.*:\s*||"`
